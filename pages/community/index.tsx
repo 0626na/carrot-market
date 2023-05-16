@@ -4,7 +4,7 @@ const Community: NextPage = () => {
   return (
     <div className="px-4 py-16 space-y-10">
       {[1, 2, 3, 4, 5, 6].map((_, index) => (
-        <div key={index} className="">
+        <div key={index}>
           <span className="flex justify-center items-center bg-slate-200 w-20 rounded-xl">
             동네질문
           </span>
@@ -55,7 +55,7 @@ const Community: NextPage = () => {
         </div>
       ))}
 
-      <button className="fixed bg-orange-300 bottom-14 right-14 rounded-full p-5 text-white shadow-sm hover:bg-orange-400 cursor-pointer">
+      <button>
         <svg
           className="w-6 h-6"
           fill="none"
