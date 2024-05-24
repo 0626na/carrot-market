@@ -21,7 +21,7 @@ const AddProduct = () => {
     }
 
     // 4MB이상 초과시 validtaion 처리를 할 예정
-    if ((file.size / 1024) * 1024 > 4) {
+    if (file.size / (1024 * 1024) > 4) {
       return { error: "크기가 4MB를 초과하는 이미지는 업로드 할수 없습니다." };
     }
 
