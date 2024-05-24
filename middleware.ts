@@ -26,7 +26,7 @@ export const middleware = async (request: NextRequest) => {
   // 로그인
   else {
     // 로그인 상태인데 로그아웃 상태일때만 이용가능한 페이지로 이동하려는 경우
-    if (exist) return NextResponse.redirect(new URL("/product", request.url));
+    if (exist) return NextResponse.redirect(new URL("/products", request.url));
   }
 };
 
